@@ -1,0 +1,23 @@
+{
+	"function": {
+		"amplifytypescriptdem7e92dad0": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true
+		},
+		"amplifytypescriptdemf00d9d47": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "amplifytypescriptdem7e92dad0",
+					"attributes": [
+						"Name"
+					]
+				}
+			]
+		}
+	}
+}
